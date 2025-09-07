@@ -1,0 +1,23 @@
+## Buscar students
+GET http://localhost:3000/students
+Accept: application/json
+
+## Buscar students por série
+### Buscar alunos por série
+GET http://localhost:3000/students/PW I
+Accept: application/json
+
+## Create student
+### Criar novo aluno
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+  "name": "ALESSANDRO VITORIO",
+  "login": "alevitorio",
+  "email": "alebvitorio@gmail.com",
+  "serie": "BD III",
+  "avatar": "https://avatars.githubusercontent.com/u/43097497?v=4",
+  "urlRepository": "exercicios-bdIII"
+}
+
