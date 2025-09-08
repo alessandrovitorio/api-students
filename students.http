@@ -1,5 +1,5 @@
 ## Buscar students
-GET http://localhost:3000/students
+GET http://localhost:3000/students/
 Accept: application/json
 
 ## Buscar students por série
@@ -9,15 +9,13 @@ Accept: application/json
 
 ## Create student
 ### Criar novo aluno
-POST http://localhost:3000/students
+POST https://api-students-production.up.railway.app/students
 Content-Type: application/json
 
 {
-  "name": "ALESSANDRO VITORIO",
+  "name": "Alessandro Barbosa Vitorio",
   "login": "alevitorio",
-  "email": "alebvitorio@gmail.com",
-  "serie": "BD III",
-  "avatar": "https://avatars.githubusercontent.com/u/43097497?v=4",
-  "urlRepository": "exercicios-bdIII"
+  "email": "alessandro@gmail.com",
+  "avatar": "https://avatars.githubusercontent.com/u/43097497?v=4"
 }
 

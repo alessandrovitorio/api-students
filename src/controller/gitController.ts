@@ -31,7 +31,7 @@ export const gitController = {
           client_id: process.env.GITHUB_CLIENT_ID,
           client_secret: process.env.GITHUB_CLIENT_SECRET,
           code: code,
-          redirect_uri: 'http://localhost:3000/auth/github/callback',
+          redirect_uri: 'https://api-students-production.up.railway.app/auth/github/callback',
         },
         headers: {
           accept: 'application/json',
@@ -54,7 +54,7 @@ export const gitController = {
         avatar: user.avatar_url,
         login: user.login,
         email: user.email,
-        urlRepository: `https://github.com/${user.login}/exercicios-pwI`
+        urlRepository: `https://github.com/${user.login}/exercicios-pw`
       }
       // Retorna as informações do usuáriostu
       const students = await prisma.students.create({
