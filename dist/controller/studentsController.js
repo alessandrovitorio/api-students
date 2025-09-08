@@ -53,7 +53,7 @@ exports.studentsController = {
                     login,
                     serie,
                     avatar: `https://github.com/${login}.png`,
-                    urlRepository: `https://github.com/${login}/${urlRepository}`,
+                    urlRepository: `https://github.com/${login}/${urlRepository !== null && urlRepository !== void 0 ? urlRepository : 'exercicios-pw'}`,
                 }
             });
             res.status(201).json(students);
