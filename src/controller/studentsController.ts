@@ -1,3 +1,4 @@
+import { log } from "console";
 import { prisma } from "../databases/prisma-client";
 import { Request, Response } from 'express';
 
@@ -43,6 +44,7 @@ export const studentsController = {
 
             if (existingStudent) throw new Error("Student already exists");
 
+          
             const students = await prisma.students.create({
                 data: {
                     name,
@@ -50,7 +52,7 @@ export const studentsController = {
                     login,
                     serie,
                     avatar: `https://github.com/${login}.png`,
-                    urlRepository: `https://github.com/${login}/${urlRepository}??exercicios-pw`,
+                    urlRepository: `https://github.com/${login}/${urlRepository??'exercicios-pw'}`,
 
                 }
             })
