@@ -15,8 +15,8 @@ model Students {
   login String @unique
   email String? @unique
   avatar String? @default("avatar.png")
-  serie String
-  urlRepository String
+  serie String  @default("1º H")
+  urlRepository String @default("exercicios-pw")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   @@map("students")

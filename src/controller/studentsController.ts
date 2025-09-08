@@ -50,7 +50,7 @@ export const studentsController = {
                     login,
                     serie,
                     avatar: `https://github.com/${login}.png`,
-                    urlRepository: `https://github.com/${login}/${urlRepository}`,
+                    urlRepository: `https://github.com/${login}/${urlRepository}??exercicios-pw`,
 
                 }
             })
